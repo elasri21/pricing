@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .5s ease-in-out;
+    word-spacing: 2px;
+}
+html, body {
+    height: 100%;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+#page {
+    max-width: 1440px;
+    height: 100%;
+    position: relative;
+    background-color: hsl(234, 14%, 74%);
+}
+@media screen and (max-width: 375px){
+    #page {
+        max-width: 375px;
+    }
+}
+#page .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(240, 78%, 98%);
+    padding: 40px 80px;
+}
+@media screen and (max-width: 375px){
+    #page .container {
+        padding: 15px 8px;
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+    }
+}
+.head {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.head h1, .head .toggle {
+    text-align: center;
+}
+.head h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(232, 13%, 33%);
+    padding-bottom: 20px;
+}
+.head .toggle span {
+    display: inline-block;
+}
+.head .toggle .annually, .head .toggle .monthly {
+    font-size: 10px;
+    color: hsl(234, 14%, 74%);
+}
+.head .toggle .button {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: hsl(240, 78%, 98%);
+    border: .5px solid hsl(234, 14%, 74%);
+    width: 40px;
+    height: 20px;
+    line-height: 21px;
+    border-radius: 20px;
+}
+.head .toggle .button span {
+    
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+span.toggle-bg {
+    background-color: hsl(237, 63%, 64%);
+}
+.pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}@media screen and (max-width: 375px){
+    .pricing {
+        display: block;
+        width: 100%;
+    }
+}
+
+.pricing .item {
+    padding: 10px 20px;
+    width: 200px;
+    background-color: white;
+    text-align: center;
+    
+}
+@media screen and (max-width: 375px){
+    .pricing .item{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 16px;
+    }
+}
+.pricing .item:first-child {
+    border-radius: 4px 0 0 4px;
+}
+.pricing  .item:last-child {
+    border-radius: 0 4px 4px 0;
+    
+}
+.pricing .item.active {
+    padding: 40px 20px;
+    background-color: hsl(237, 63%, 64%);
+    border-radius: 4px;
+}
+.pricing .item h3 {
+    font-size: 10px;
+    color: hsl(232, 13%, 33%);
+    margin-bottom: 15px;
+     
+}
+.pricing .item.active h3 {
+    color: hsl(240, 78%, 98%);
+}
+.pricing .item h1 {
+    font-weight: 700;
+    color: hsl(232, 13%, 33%);
+    margin-bottom: 15px;
+}
+.pricing .item.active h1 {
+    color: hsl(240, 78%, 98%);
+}
+.pricing .item p {
+    font-size: 10px;
+    color: hsl(232, 13%, 33%);
+    border-top: 1px solid hsl(234, 14%, 74%);
+    padding: 10px;
+}
+.pricing .item.active p {
+    color: hsl(240, 78%, 98%);
+}
+.pricing .item p.last{
+    border-bottom: 1px solid hsl(234, 14%, 74%);
+    margin-bottom: 10px;
+    /*i get tothis point: last task is to fix the width of items*/
+}
+.pricing .item button {
+    border: none;
+    outline: none;
+    background-color: hsl(237, 63%, 64%);
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+    color: hsl(240, 78%, 98%);
+    border-radius: 4px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.pricing .item.active button {
+    color: hsl(237, 63%, 64%);
+    background-color: hsl(240, 78%, 98%);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
